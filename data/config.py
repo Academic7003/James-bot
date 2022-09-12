@@ -21,12 +21,12 @@ admins = [
 ip = os.getenv("ip")
 
 # Ссылка подключения к базе данных
-POSTGRES_URI = postgres://nhvrxploartdws:23a8b4c5efa46d801e7568cbd5d8ee7b1e79196d3c83b7506ea72fa2b36c1d9b@ec2-44-208-88-195.compute-1.amazonaws.com:5432/d50o3psk3m1tgv
+POSTGRES_URI = "postgres://nhvrxploartdws:23a8b4c5efa46d801e7568cbd5d8ee7b1e79196d3c83b7506ea72fa2b36c1d9b@ec2-44-208-88-195.compute-1.amazonaws.com:5432/d50o3psk3m1tgv"
 aiogram_redis = {
     'host': ip,
 }
 
 redis = {
-    'address': (ip, 6379),
+    'address': (ip, 5432),
     'encoding': 'utf8'
 }
